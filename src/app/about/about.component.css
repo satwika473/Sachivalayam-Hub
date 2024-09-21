@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.section_title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about_us {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.section_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image_section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image_section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Blog Card Section */
+.blog-card-section {
+  padding: 50px 0;
+}
+
+.blog-card {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sliders {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sliders .tap {
+  background-color: #ddd;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.inner-part {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .inner-part {
+  display: block;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.service_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services_items {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services_items img {
+  width: 90%;
+  height: 20%;
+  margin-bottom: 15px;
+}
+
+.services_text h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.services_text p {
+  font-size: 1rem;
+  color: #666;
+}

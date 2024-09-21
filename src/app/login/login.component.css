@@ -1,0 +1,105 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url("https://images6.alphacoders.com/133/1338694.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  margin-top: 0%;
+  margin-bottom: 9%;
+  max-width: 300px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+  color: rgb(255, 60, 0);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(253, 110, 66, 0.5);
+  padding: 50px;
+  text-align: center;
+  max-width: 400px;
+  border: 2px solid rgba(255, 72, 0, 0.2); /* Lighter border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  margin-right: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background: rgba(25, 24, 24, 0.2); 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button.btn {
+  background-color: rgba(228, 80, 12, 0.7); /* Slightly transparent button */
+  color: rgb(5, 5, 5);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #e4500c;
+}
+
+.login-message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.login-message.success {
+  background-color: rgba(212, 237, 218, 0.5); /* Transparent success message */
+  color: #155724;
+}
+
+.login-message.error {
+  background-color: rgba(248, 215, 218, 0.5); /* Transparent error message */
+  color: #721c24;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.register-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+a {
+  cursor: pointer;
+  color: #0c0c0c;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}

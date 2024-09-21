@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Government Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/service" class="logo">CSP Project</a>
+            <ul class="nav-links">
+                <li><a routerLink="/service">Home</a></li>
+                <li><a routerLink="/about">About</a></li>
+                <li><a routerLink="/view">Project</a></li>
+                <li><a routerLink="/contact">Contact Us</a></li>
+                <li><a routerLink="/profile">Details</a></li>
+                <li>
+                    <button class="oteam" style="background-color: rgb(201, 57, 57);padding: 5px;border-radius: 5px;color: white;" (click)="logout()">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="carousel">
+            <div class="carousel-image" id="slide1"></div>
+            <div class="carousel-image" id="slide2"></div>
+            <div class="carousel-image" id="slide3"></div>
+            <div class="header-content">
+                <h1>Welcome to the Sachivalayam Services Guide</h1>
+                <p>The Most Exciting guide to know working conditions of Sachivalayam</p>
+                <a routerLink="/view"><button>Discover More</button></a>
+            </div>
+        </div>
+        
+    </header>
+    <section class="services">
+        <div class="service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwj_oE984U_VkV0bndO_iGu5UxitfYCo3qFg&s" alt="Government">
+            <h5>Your Government</h5>
+        </div>
+        <div class="service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXPAoBbfkMZDVaUx2yjUH9HJgUyopWSD32g&s" alt="Jobs">
+            <h5>Jobs and Unemployment</h5>
+        </div>
+        <div class="service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagohv04OOVN7mdFDaVHheoHovzuPAo68oFw&s" alt="Business">
+            <h5>Services</h5>
+        </div>
+        <div class="service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagohv04OOVN7mdFDaVHheoHovzuPAo68oFw&s" alt="Transport">
+            <h5>Social Welfare</h5>
+        </div>
+        <div class="service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReyRA_RtXtY3PnJtHzG9UcIYF0j1Gq56u3mw&s" alt="Culture">
+            <h5>Local offices</h5>
+        </div>
+        <div class="service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk9RB-2k5InVd2I0NxfwINvnZPvdci-5YfMQ&s" alt="Justice">
+            <h3>Volunteers</h3>
+        </div>
+    </section>
+    <section class="explore">
+        <h2>Let's explore local services, programs & initiatives.</h2>
+        <div class="explore-content">
+            <div class="explore-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAcdCX4UjYeWrjGSUBG25uzJjNcdSjR0SbqA&s" alt="Service Departments">
+                <h5>Services</h5>
+            </div>
+            <div class="explore-item">
+                <img src="https://www.brown.edu/sites/default/files/styles/wide_xlrg/public/2019-02/20180902_COMM_orientation031.jpg?h=fc7c37d4&itok=aHKnwPlf" alt="City Visitors Guide">
+                <h5>Communities</h5>
+            </div>
+            <div class="explore-item">
+                <img src="https://st.adda247.com/https://www.studyiq.com/articles/wp-content/uploads/2023/02/03142159/Resources.jpg" alt="Administrations">
+                <h5>Resources</h5>
+            </div>
+        </div>
+        <a style="text-decoration: none;" routerLink="/mservice" class="oteam">Explore Services</a>
+    </section>
+    <section class="leader">
+        <h2>Empowering our community through accessible and reliable public services. </h2>
+        <p>From healthcare to education, we are here to support you every step of the way.</p>
+        <p>Discover the services available to you and stay informed about the latest updates and initiatives. Together, we build a stronger, thriving community.</p><blockquote>
+            "Stand at the top of a cliff and jump off and build your wings on the way down."
+            <cite>— Carnee Simmons, Mayor</cite>
+        </blockquote>
+        <a style="text-decoration: none;" routerLink="/team" class="oteam">Meet Our Team</a>
+        
+    </section>
+    <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <i class="fab fa-slack"></i>
+              <span class="logo_name">Sachivalayam Guide</span>
+            </div>
+            <div class="media-icons">
+              <a href=""><i class="bi bi-facebook"></i></a>  
+              <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""> <i class="bi bi-envelope-fill"></i></a>
+                    <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Get started</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Services</li>
+              <li><a href="#">Revenue</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Social Welfare</a></li>
+              <li><a href="#">Health</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Categories</li>
+                <li><a href="/mservice">Services</a></li>
+                <li><a href="/department">Departments</a></li>
+                <li><a href="/volunter">Volunteers</a></li>
+                <li><a href="/resources">Q & A</a></li>
+              </ul>
+            <ul class="box">
+              <li class="link_name">Account</li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Prefrences</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email"></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2024 <a href="#">NEC.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>  
+    
+             
+   
+    <script src="scripts.js"></script>
+</body>
+</html>

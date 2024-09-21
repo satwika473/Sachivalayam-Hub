@@ -1,0 +1,537 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.report-issue {
+    background: #e74c3c;
+    color: white;
+}
+
+/* General carousel styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    animation: carousel-animation 15s infinite;
+}
+
+/* Slide 1 */
+#slide1 {
+    background-image: url('https://klhitech.com/images/new/government-banner.jpg');
+}
+
+/* Slide 2 - Replace with another image path */
+#slide2 {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231008/pngtree-stunning-office-design-panoramic-city-view-modern-furniture-and-state-of-image_13534828.png');
+    animation-delay: 5s;
+}
+
+/* Slide 3 - Replace with another image path */
+#slide3 {
+    background-image: url('https://poonawallafincorp.com/pfca/assets/blog_banner/blog_banner-loan-for-government-employee.png');
+    animation-delay: 10s;
+}
+
+/* Keyframes for carousel animation */
+@keyframes carousel-animation {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    30% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Styling for the content overlay */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.header-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-content button:hover {
+    background-color: #ff6b4a;
+}
+
+
+.header-content h1 {
+    margin: 0;
+    color: #ff1900;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+
+.header-content button {
+    padding: 10px 20px;
+    background: white;
+    color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.header-content button:hover{
+color:white;
+background-color: #e74c3c;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+.service {
+    text-align: center;
+    width: 150px;
+    margin: 20px;
+}
+
+.service img {
+    width: 50px;
+    height: 50px;
+}
+
+.explore {
+    background: rgb(206, 201, 201);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.explore h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.explore-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.explore-item {
+    text-align: center;
+    width: 200px;
+}
+
+.explore-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background:#e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.leader {
+    background: #f2f2f2;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.leader h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.leader p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.leader blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.leader blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.video-btn {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.stats {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stats-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-item {
+    width: 150px;
+}
+
+.stat-item h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 1em;
+    margin: 10px 0 0;
+}
+footer{
+
+    background: #e74c3c;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+ /* footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #AFAFB6;
+  }*/
+  footer .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+  footer .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .content .top .logo-details{
+    color: #fff;
+    font-size: 30px;
+  }
+  .content .top .media-icons{
+    display: flex;
+  }
+  .content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .top .media-icons a:nth-child(1){
+    background: #4267B2;
+  }
+  .top .media-icons a:nth-child(1):hover{
+    color: #4267B2;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(2){
+    background: #1DA1F2;
+  }
+  .top .media-icons a:nth-child(2):hover{
+    color: #1DA1F2;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(3){
+    background: #E1306C;
+  }
+  .top .media-icons a:nth-child(3):hover{
+    color: #E1306C;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(4){
+    background: #0077B5;
+  }
+  .top .media-icons a:nth-child(4):hover{
+    color: #0077B5;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(5){
+    background: #FF0000;
+  }
+  .top .media-icons a:nth-child(5):hover{
+    color: #FF0000;
+    background: #fff;
+  }
+  footer .content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 5 - 10px);
+  }
+  .content .link-boxes .box .link_name{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .link-boxes .box .link_name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+  }
+  .content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+  }
+  .content .link-boxes .box li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+  .content .link-boxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .content .link-boxes .input-box{
+    margin-right: 55px;
+  }
+  .link-boxes .input-box input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #140B5C;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .link-boxes .input-box input::placeholder{
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+  .link-boxes .input-box input[type="button"]{
+    background: #fff;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .input-box input[type="button"]:hover{
+    opacity: 1;
+  }
+  footer .bottom-details{
+    width: 100%;
+    background: #0F0844;
+  }
+  footer .bottom-details .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  .bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .bottom-details .bottom_text a{
+    margin-right: 10px;
+  }
+ 
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.oteam {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(45deg, #f33405, #e98362);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  outline: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.oteam:hover {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+}
+#modal::backdrop {
+  opacity: 1;
+  background-color: rgb(25, 25, 170);
+  backdrop-filter: blur(5px);
+}
+#modal {
+  box-shadow: 5px 10px #888888;
+  border-radius: 8px;
+  border: none;
+ 
+}
+#dialog header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

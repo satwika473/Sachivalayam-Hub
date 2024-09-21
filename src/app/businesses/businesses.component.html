@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<nav>
+  <div class="nav-container">
+      <a href="/service" class="logo">CSP Project</a>
+      <ul class="nav-links">
+          <li><a routerLink="/service">Home</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/view">Project</a></li>
+          <li><a routerLink="/contact">Contact Us</a></li>
+          <li><a routerLink="/profile">Details</a></li>
+          <li>
+              <button class="oteam" style="background-color: rgb(201, 57, 57);padding: 5px;border-radius: 5px;color: white;" (click)="logout()">Logout</button>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+
+<div class="side-menu">
+  
+  <div class="side-menu-content">
+    <div class="c4"><i class="fas fa-bars"></i></div>
+    <div class="side-menu-items">
+      <ul>
+        <li>
+          <a routerLink="/service">
+            <span class="menu-text">Home</span>
+           <div class="c1"><i class="fas fa-home"></i></div>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/mservice">
+            <span class="menu-text">Services</span>
+            <div class="c1"><i class="fas fa-briefcase"></i></div>
+          </a>
+        </li>
+        <li>
+          <a href="/department">
+          <span class="menu-text">Departments</span>
+          <i class="fa fa-sign-in" aria-hidden="true"></i>
+              </a>
+        </li>
+        <li>
+          <a routerLink="/resource">
+            <span class="menu-text">Resources</span>
+            <div class="c2"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/volunter">
+            <span class="menu-text">Volunteers</span>
+            <div class="c2"><i class="fas fa-info-circle"></i></div>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/news">
+            <span class="menu-text">News & Update</span>
+            <div class="c2"><i class="fas fa-info-circle"></i></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div class="backdrop" *ngIf="isProfileMenuOpen" (click)="toggleMenu()"></div>
+
+<!-- Heading -->

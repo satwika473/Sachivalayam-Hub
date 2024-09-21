@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2a3b4c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.department {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    transition: transform 0.3s ease;
+}
+
+.department:hover {
+    transform: scale(1.02);
+}
+
+.department img {
+    width: 30%;
+    margin-right: 5%;
+    height: 50%;
+    border-radius: 10px 0 0 10px;
+}
+
+.department-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.department-info h2 {
+    color: #2a669f;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.department-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.services, .contact {
+    margin-top: 20px;
+}
+
+.services h3, .contact h3 {
+    color: #4682b4;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.services ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.services ul li {
+    margin-bottom: 5px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #2a3b4c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
